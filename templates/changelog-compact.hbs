@@ -1,8 +1,5 @@
 {{#each releases}}
-  {{#if @first}}
-    {{#each merges}}
-      - {{{message}}}
-    {{/each}}
+  {{#if @first}}    
     {{#each fixes}}
       - {{{commit.subject}}}{{#each fixes}}{{#if href}} [`#{{id}}`]({{href}}){{/if}}{{/each}}
     {{/each}}
